@@ -86,6 +86,9 @@ class Data(db.Document):
 
 
 # class testset(db.Document):
+@app.route('/')
+def index():
+    return "<h1> Deployed to Heroku</h1>"
 
 @app.route('/register', methods = ['GET'])
 def register(): #Returns an length 6 api key 
