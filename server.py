@@ -15,7 +15,7 @@ from datetime import datetime
 from bson.binary import Binary
 import pickle
 from PIL import Image
-import io
+import io   
 
 mongodb_pass = 'gobears'
 db_name = 'Main'
@@ -88,6 +88,7 @@ class Data(db.Document):
 # class testset(db.Document):
 @app.route('/')
 def index():
+    print("HI")
     return "<h1> Deployed to Heroku</h1>"
 
 @app.route('/register', methods = ['GET'])
